@@ -1,9 +1,12 @@
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
     <>
-      <div className="text-8xl font-bold">SecondSpin</div>
+      <Routes>
+        <Route path="/" Component={LoginPage} />
+      </Routes>
     </>
   );
 }
